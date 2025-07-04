@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | QR code component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 14px; text-align: center; }
+    .attribution a { color: hsl(0, 0%, 100%); }
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body, html{
+      height: 100%;
+      width: 100%;
+    }
+    main{
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(hsl(216, 14%, 58%), hsl(215, 20%, 44%), hsl(216, 18%, 33%), hsl(217, 13%, 59%));
+      display: grid;
+      place-items:center;
+    }
+    .container{
+      border-radius: 15px;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto 1fr;
+      grid-template-areas: 
+                  "img"
+                  "text";
+      gap: 20px;
+      width: 340px;
+      height: 520px;
+      margin: auto;
+      padding: 10px;
+      background-color: hsl(212, 45%, 89%);
+      box-shadow: 1px 5px 15px black;
+    }
+    img{
+      grid-area: img;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 10px;
+    }
+    .text_content{
+      grid-area: text;
+      margin-top: 0;
+      padding: 0;
+      font-size: 15px;
+      text-align: center;
+      span{
+        margin-top: 0;
+        height: 50%;
+        display: block;
+        font-size: 29px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="container">
+      <img src="images/image-qr-code.png" alt="QR-code">
+      <div class="text_content">
+        <span class="title">Improve your front-end skills by building projects</span>
+        scan the Qr code to visit frontend mentor and take your coding skill to the next level
+      </div>
+    </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Hassen</a>.
+  </div>
+  </main>
+</body>
+</html>
+
